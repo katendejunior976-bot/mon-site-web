@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
-
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Portfolio professionnel de Junior Katende — Développeur junior / Informaticien">
     <title>Junior Katende — Développeur junior</title>
 
-    <!-- Local Bootstrap for responsive layout -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts & Font Awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -19,12 +16,10 @@
 
 <body>
 
-
-
     <header class="header">
       <div class="container">
         <div class="nav">
-          <div class="brand"><a href="#">Junior Katende</a></div>
+          <div class="brand"><a href="#home">JK</a></div>
           <button class="menu-toggle">☰</button>
           <nav>
             <ul>
@@ -32,6 +27,7 @@
               <li><a href="#about">À propos</a></li>
               <li><a href="#skills">Compétences</a></li>
               <li><a href="#projects">Projets</a></li>
+              <li><a href="#experience">Expérience</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
@@ -40,112 +36,302 @@
     </header>
 
     <main>
+      <!-- Hero Section -->
       <section id="home" class="hero">
         <div class="container">
           <div class="left">
             <h1 class="fade-in">Bonjour, je suis <strong>Junior Katende</strong></h1>
-            <p class="lead fade-in">Développeur junior &amp; informaticien, étudiant à l’Université de Lubumbashi (UNILU),
-Faculté de Génie Informatique, passionné par le développement web, l'intelligence artificielle, les bonnes pratiques et l’apprentissage continu.</p>
+            <p class="lead fade-in">Développeur junior & informaticien, étudiant à l'Université de Lubumbashi (UNILU), Faculté de Génie Informatique. Passionné par le développement web, l'intelligence artificielle et les bonnes pratiques de codage.</p>
             <div class="cta fade-in">
               <a class="btn" href="#projects"><i class="fa-solid fa-rocket"></i> Voir mes projets</a>
               <a class="btn secondary" href="#contact"><i class="fa-solid fa-envelope"></i> Me contacter</a>
             </div>
+            <div class="social-links fade-in">
+              <a href="https://github.com/katendejunior976-bot" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/juniorkatende" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.facebook.com/juniorjkbjr" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            </div>
           </div>
           <div class="avatar fade-in">
-           <img src="./images/Jun.jpg" alt="Portrait illustratif d'un développeur">
-
+            <img src="./images/Jun.jpg" alt="Portrait de Junior Katende">
           </div>
         </div>
       </section>
 
+      <!-- About Section -->
       <section id="about" class="section">
         <div class="container">
           <div class="section-title">
-            <h2>À propos</h2>
-            <p>Je suis un développeur junior motivé, sérieux et toujours curieux d'apprendre. Je crée des interfaces propres, performantes et accessibles. Mes projets combinent logique, design et bonnes pratiques.</p>
+            <h2>À propos de moi</h2>
+            <p>Qui suis-je vraiment</p>
           </div>
-          <div class="card">
-            <p class="note">Compétences techniques principales : HTML, CSS, JavaScript, Java, Python, Bases de données (SQL), Git. Je m'intéresse aussi aux frameworks modernes (React, Spring) et aux pratiques DevOps basiques.</p>
+          <div class="about-content">
+            <div class="about-text card fade-in">
+              <p>Je suis un développeur junior motivé, sérieux et toujours curieux d'apprendre. Je crée des interfaces propres, performantes et accessibles. Mes projets combinent logique métier, design moderne et expérience utilisateur optimale.</p>
+              <p style="margin-top: 16px;">Actuellement étudiant en Génie Informatique à l'UNILU, je construis mes compétences à travers des projets académiques et personnels. Je suis particulièrement intéressé par :</p>
+              <ul class="interests-list" style="margin-top: 12px;">
+                <li>✓ Développement web moderne (HTML, CSS, JavaScript)</li>
+                <li>✓ Backend avec Java et Python</li>
+                <li>✓ Gestion de bases de données</li>
+                <li>✓ Apprentissage continu et adoption de nouvelles technologies</li>
+              </ul>
+            </div>
+            <div class="about-stats card fade-in">
+              <div class="stat">
+                <h3>3+</h3>
+                <p>Années d'expérience en programmation</p>
+              </div>
+              <div class="stat">
+                <h3>15+</h3>
+                <p>Projets académiques & personnels</p>
+              </div>
+              <div class="stat">
+                <h3>6</h3>
+                <p>Langages maîtrisés</p>
+              </div>
+              <div class="stat">
+                <h3>100%</h3>
+                <p>Passion pour le développement</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
+      <!-- Skills Section -->
       <section id="skills" class="section">
         <div class="container">
-          <div class="section-title"><h2>Compétences</h2><p>Compétences techniques mises en avant.</p></div>
-          <div class="skills">
-            <div class="skill card fade-in">
-              <div class="meta"><strong>HTML &amp; CSS</strong><span>90%</span></div>
-              <div class="progress"><span style="width:90%"></span></div>
+          <div class="section-title">
+            <h2>Compétences techniques</h2>
+            <p>Technologies et outils que je maîtrise</p>
+          </div>
+          
+          <div class="skills-grid">
+            <!-- Frontend -->
+            <div class="skill-category card fade-in">
+              <h3><i class="fa-solid fa-code"></i> Frontend</h3>
+              <div class="skills">
+                <div class="skill">
+                  <div class="meta"><strong>HTML5</strong><span>95%</span></div>
+                  <div class="progress"><span style="width:95%"></span></div>
+                </div>
+                <div class="skill">
+                  <div class="meta"><strong>CSS3</strong><span>90%</span></div>
+                  <div class="progress"><span style="width:90%"></span></div>
+                </div>
+                <div class="skill">
+                  <div class="meta"><strong>JavaScript</strong><span>85%</span></div>
+                  <div class="progress"><span style="width:85%"></span></div>
+                </div>
+              </div>
             </div>
-            <div class="skill card fade-in">
-              <div class="meta"><strong>JavaScript</strong><span>80%</span></div>
-              <div class="progress"><span style="width:80%"></span></div>
+
+            <!-- Backend -->
+            <div class="skill-category card fade-in">
+              <h3><i class="fa-solid fa-server"></i> Backend</h3>
+              <div class="skills">
+                <div class="skill">
+                  <div class="meta"><strong>Java</strong><span>80%</span></div>
+                  <div class="progress"><span style="width:80%"></span></div>
+                </div>
+                <div class="skill">
+                  <div class="meta"><strong>Python</strong><span>80%</span></div>
+                  <div class="progress"><span style="width:80%"></span></div>
+                </div>
+                <div class="skill">
+                  <div class="meta"><strong>SQL</strong><span>85%</span></div>
+                  <div class="progress"><span style="width:85%"></span></div>
+                </div>
+              </div>
             </div>
-            <div class="skill card fade-in">
-              <div class="meta"><strong>Java</strong><span>70%</span></div>
-              <div class="progress"><span style="width:70%"></span></div>
+
+            <!-- Tools -->
+            <div class="skill-category card fade-in">
+              <h3><i class="fa-solid fa-tools"></i> Outils & Frameworks</h3>
+              <div class="skills">
+                <div class="skill">
+                  <div class="meta"><strong>Git & GitHub</strong><span>90%</span></div>
+                  <div class="progress"><span style="width:90%"></span></div>
+                </div>
+                <div class="skill">
+                  <div class="meta"><strong>Bootstrap</strong><span>85%</span></div>
+                  <div class="progress"><span style="width:85%"></span></div>
+                </div>
+                <div class="skill">
+                  <div class="meta"><strong>VS Code</strong><span>90%</span></div>
+                  <div class="progress"><span style="width:90%"></span></div>
+                </div>
+              </div>
             </div>
-            <div class="skill card fade-in">
-              <div class="meta"><strong>Python</strong><span>70%</span></div>
-              <div class="progress"><span style="width:70%"></span></div>
-            </div>
-            <div class="skill card fade-in">
-              <div class="meta"><strong>Bases de données (SQL)</strong><span>75%</span></div>
-              <div class="progress"><span style="width:75%"></span></div>
-            </div>
-            <div class="skill card fade-in">
-              <div class="meta"><strong>Git &amp; GitHub</strong><span>80%</span></div>
-              <div class="progress"><span style="width:80%"></span></div>
+
+            <!-- Soft Skills -->
+            <div class="skill-category card fade-in">
+              <h3><i class="fa-solid fa-people-group"></i> Soft Skills</h3>
+              <div class="skills">
+                <div class="skill">
+                  <div class="meta"><strong>Résolution de problèmes</strong><span>90%</span></div>
+                  <div class="progress"><span style="width:90%"></span></div>
+                </div>
+                <div class="skill">
+                  <div class="meta"><strong>Collaboration</strong><span>85%</span></div>
+                  <div class="progress"><span style="width:85%"></span></div>
+                </div>
+                <div class="skill">
+                  <div class="meta"><strong>Communication</strong><span>80%</span></div>
+                  <div class="progress"><span style="width:80%"></span></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Projects Section -->
       <section id="projects" class="section">
         <div class="container">
-          <div class="section-title"><h2>Projets</h2><p>Quelques projets personnels et académiques représentatifs.</p></div>
+          <div class="section-title">
+            <h2>Projets récents</h2>
+            <p>Quelques projets personnels et académiques représentatifs</p>
+          </div>
           <div class="projects">
             <article class="project card fade-in">
-              <div class="thumb"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=7d9b7f0f1a5f" alt="Projet web 1"></div>
-              <h4>Site vitrine (HTML/CSS/JS)</h4>
-              <p>Un site responsive réalisé pour pratiquer les bonnes pratiques CSS et accessibilité.</p>
-              <a href="#">Voir le projet →</a>
+              <div class="project-badge">Web</div>
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=7d9b7f0f1a5f" alt="Projet web responsive"></div>
+              <h4>Site vitrine responsive</h4>
+              <p>Un site web responsive réalisé avec HTML5, CSS3 et JavaScript vanilla. Conçu avec une approche mobile-first et respectant les bonnes pratiques d'accessibilité.</p>
+              <div class="tech-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+              <a href="#" class="project-link"><i class="fa-solid fa-external-link"></i> Voir le projet</a>
             </article>
+
             <article class="project card fade-in">
-              <div class="thumb"><img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=7bdf3b6e9f3d" alt="Projet web 2"></div>
-              <h4>Application Java (console / mini-API)</h4>
-              <p>Application académique utilisant Java pour la logique métier et une base de données SQL.</p>
-              <a href="#">Voir le projet →</a>
+              <div class="project-badge">Backend</div>
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=7bdf3b6e9f3d" alt="Application Java"></div>
+              <h4>Application de gestion Java</h4>
+              <p>Application de console en Java avec gestion complète de base de données SQL. Implémente les principes SOLID et utilise JDBC pour les opérations CRUD.</p>
+              <div class="tech-tags">
+                <span>Java</span>
+                <span>SQL</span>
+                <span>JDBC</span>
+              </div>
+              <a href="#" class="project-link"><i class="fa-solid fa-external-link"></i> Voir le code</a>
             </article>
+
             <article class="project card fade-in">
-              <div class="thumb"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=bb15b6a9ff14" alt="Projet web 3"></div>
-              <h4>Scripts Python &amp; Automatisation</h4>
-              <p>Petits outils d'automatisation pour manipuler fichiers et données (CSV, JSON).</p>
-              <a href="#">Voir le projet →</a>
+              <div class="project-badge">Automation</div>
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=bb15b6a9ff14" alt="Scripts Python"></div>
+              <h4>Scripts d'automatisation Python</h4>
+              <p>Outils d'automatisation pour traitement de données (CSV, JSON) et web scraping. Utiles pour manipuler et analyser des fichiers en masse.</p>
+              <div class="tech-tags">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>BeautifulSoup</span>
+              </div>
+              <a href="#" class="project-link"><i class="fa-solid fa-external-link"></i> Voir le projet</a>
             </article>
+          </div>
+          <div class="projects-cta fade-in">
+            <a href="meetings.html" class="btn"><i class="fa-solid fa-folder-open"></i> Voir tous les projets</a>
           </div>
         </div>
       </section>
 
+      <!-- Experience Section -->
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Formation & Expérience</h2>
+            <p>Mon parcours académique et professionnel</p>
+          </div>
+          
+          <div class="timeline">
+            <div class="timeline-item card fade-in">
+              <div class="timeline-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="timeline-content">
+                <h3>Licence en Génie Informatique</h3>
+                <p class="timeline-meta">Université de Lubumbashi (UNILU) | 2024 - Présent</p>
+                <p>Étudiant en Faculté de Génie Informatique. Études approfondies en programmation, bases de données, architecture logicielle et intelligence artificielle.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item card fade-in">
+              <div class="timeline-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div class="timeline-content">
+                <h3>Développement Web Autodidacte</h3>
+                <p class="timeline-meta">2022 - 2024</p>
+                <p>Formation intensive en développement web à travers de nombreux projets personnels. Maîtrise des technologies frontend et backend modernes.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item card fade-in">
+              <div class="timeline-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="timeline-content">
+                <h3>Projets Académiques & Open Source</h3>
+                <p class="timeline-meta">En cours</p>
+                <p>Participation active à des projets académiques et contribution à des projets open source. Collaboration avec d'autres développeurs pour améliorer mes compétences.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
       <section id="contact" class="section">
         <div class="container">
-          <div class="section-title"><h2>Contact</h2><p>Tu peux me contacter pour des collaborations, stages ou retours sur mes projets.</p></div>
+          <div class="section-title">
+            <h2>Parlons ensemble</h2>
+            <p>Je suis ouvert à de nouvelles opportunités, collaborations et projets passionnants</p>
+          </div>
           <div class="contact-grid">
             <form id="contact-form" class="card fade-in">
+              <h3>Envoyez-moi un message</h3>
               <div class="form-row">
-                <input name="name" type="text" placeholder="Nom complet" required>
-                <input name="email" type="email" placeholder="Email" required>
+                <input name="name" type="text" placeholder="Votre nom complet" required>
+                <input name="email" type="email" placeholder="Votre email" required>
               </div>
               <input name="subject" type="text" placeholder="Sujet (optionnel)">
-              <textarea name="message" placeholder="Votre message" required></textarea>
-              <div style="margin-top:12px"><button class="btn" type="submit">Envoyer</button></div>
+              <textarea name="message" placeholder="Votre message..." required></textarea>
+              <button class="btn" type="submit"><i class="fa-solid fa-paper-plane"></i> Envoyer le message</button>
             </form>
-            <aside class="card fade-in">
-              <h4>Infos</h4>
-              <p class="note"><i class="fa-solid fa-envelope"></i> <strong>Email :</strong> <a href="mailto:contact@junior-katende.dev">katendejunior976@gmail.com</a></p>
-              <p class="note"><i class="fa-brands fa-facebook"></i> <strong>Facebook :</strong> <a href="#">https://www.facebook.com/juniorjkbjr</a></p>
-              <p class="note"><i class="fa-brands fa-linkedin"></i> <strong>LinkedIn :</strong> <a href="#">linkedin.com/in/juniorkatende</a></p>
+            <aside class="contact-info fade-in">
+              <h3>Coordonnées</h3>
+              <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:katendejunior976@gmail.com">katendejunior976@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fa-brands fa-linkedin"></i>
+                <div>
+                  <strong>LinkedIn</strong>
+                  <a href="https://www.linkedin.com/in/juniorkatende" target="_blank">linkedin.com/in/juniorkatende</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fa-brands fa-github"></i>
+                <div>
+                  <strong>GitHub</strong>
+                  <a href="https://github.com/katendejunior976-bot" target="_blank">github.com/katendejunior976-bot</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fa-brands fa-facebook"></i>
+                <div>
+                  <strong>Facebook</strong>
+                  <a href="https://www.facebook.com/juniorjkbjr" target="_blank">facebook.com/juniorjkbjr</a>
+                </div>
+              </div>
             </aside>
           </div>
         </div>
@@ -154,24 +340,20 @@ Faculté de Génie Informatique, passionné par le développement web, l'intelli
 
     <footer class="footer">
       <div class="container">
-        <p>© <strong>Junior Katende</strong> — Développeur junior. Tous droits réservés.</p>
+        <div class="footer-content">
+          <div>
+            <p><strong>Junior Katende</strong> © 2026 — Développeur junior & Informaticien</p>
+          </div>
+          <div class="footer-links">
+            <a href="#home">Accueil</a>
+            <a href="#about">À propos</a>
+            <a href="#projects">Projets</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
       </div>
     </footer>
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <script src="script.js"></script>
-
-
-
-</body>
-
+  </body>
 </html>
-
-
-
-
-
